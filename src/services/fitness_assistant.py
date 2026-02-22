@@ -252,7 +252,7 @@ class FitnessAssistant:
 
     def is_relevant(self, user_input: str) -> bool:
         """Verifica daca intrarea utilizatorului e despre fitness."""
-        return self.calculate_similarity(user_input) >= 0.35
+        return self.calculate_similarity(user_input) >= 0.5
 
     def assistant_response(self, user_message: str) -> str:
         """Directioneaza mesajul utilizatorului catre calea potrivita."""
