@@ -122,8 +122,8 @@ def run_evaluation() -> None:
     relevance = sum(s >= threshold for s in scores1) / len(scores1)
     print(f"Relevanta (scor >= {threshold}): {relevance*100:.2f}%")
 
-    accuracy = sum(s >= threshold for s in scores2) / len(scores2)
-    print(f"Acuratete (scor >= {threshold}): {accuracy*100:.2f}%")
+    bias = sum(s >= threshold for s in scores2) / len(scores2)
+    print(f"Bias (scor >= {threshold}): {bias*100:.2f}%")
 
 if __name__ == "__main__":
     run_evaluation()
